@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+    font-weight: 300;
+}
+
+/*TODO fix */
+@media (max-width: 768px) {
+    .section {
+        max-width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*TODO Then remove*/
+.header,
+.main,
+.footer {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #829985;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+}
+
+.nav-item a:hover {
+    color: #4d2323;
+    cursor: not-allowed;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 50%;
+}
+
+#profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    color: black;
+}
